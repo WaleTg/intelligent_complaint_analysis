@@ -1,0 +1,3 @@
+chromadb
+pydantic-settings
+sentence-transformers
