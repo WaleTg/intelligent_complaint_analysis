@@ -1,18 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
 # Data
 data/raw/
 data/processed/
+data/*.csv
+data/*.json
 
-# Model artifacts
+# Models / Embeddings
 models/
-*.pkl
 *.bin
+*.pkl
+*.pt
 
-# Jupyter checkpoints
-.ipynb_checkpoints/
+# ChromaDB local storage
+chroma.db/
+chroma_db/
+models/chroma_db/
 
-# Python cache
-__pycache__/
-*.pyc
+# Logs
+*.log
 
-# Environment files
+# Env files
 .env
+.env.*
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# System
+Thumbs.db
