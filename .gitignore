@@ -1,0 +1,18 @@
+# Data
+data/raw/
+data/processed/
+
+# Model artifacts
+models/
+*.pkl
+*.bin
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files
+.env
