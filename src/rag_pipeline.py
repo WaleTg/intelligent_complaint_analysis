@@ -24,7 +24,6 @@ from chromadb import HttpClient
 
 chroma_client = HttpClient(host="localhost", port=8000)
 
-
 # Load collection
 collection = chroma_client.get_collection(name="complaints")
 
@@ -58,6 +57,11 @@ def ask_question(question):
     prompt = PROMPT_TEMPLATE.format(context=context, question=question)
     response = generator(prompt, max_length=256, do_sample=False)[0]["generated_text"]
     return response, context
+
+def retrieve_and_generate(question: str):
+    answer, context = ask_question(question)
+    sources = context.split("\n")
+    return answer, sources
 
 def main():
     questions = [
