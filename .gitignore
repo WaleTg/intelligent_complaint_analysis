@@ -46,3 +46,8 @@ env/
 
 # System
 Thumbs.db
+
+models/
+*.safetensors
+*.pt
+__pycache__/
